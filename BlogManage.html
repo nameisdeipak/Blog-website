@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css files/header.css">
+    <link rel="stylesheet" href="Css files/BlogManage.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="images/logo.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="menu">
+              <span class="close-btn"><i class="ri-close-large-line"></i></i></span>
+            <a href="index.html">Home</a>
+            <a href="createBlogNote.html">Create Blog/Note's</a>
+            <!-- <a href="blog.html">Blog</a>
+            <a href="#">Note</a> -->
+            <a href="about.html" id="active-page">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <div class="links">
+            <a href="https://github.com/nameisdeipak"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/deepak-patidar-720262319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://www.instagram.com/nameisdeipak/?igsh=ZDA4aXI4cmJjYXA4#"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="hamburder-btn">
+          <!-- <span><i class="ri-more-2-fill"></i></span> -->
+          <span class="toggel-btn"><i class="ri-menu-fill"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <!-- main tag section start -->
+    <main>
+<!-- this for show popup masg -->
+<div class="popupMSG hidePopup">
+  <p id="msg"></p>
+</div>
+
+      <!-- manager bar is start -->
+<div class="manage-bar">
+    <div class="manage-bar-container">
+        
+        <div class="manage-bar-heading">
+            Manage Blog
+        </div>
+        <div class="manage-bar-menu">
+            <!-- <a href="createBlogNote.html?class=blog-area" class="Newoption">+New</a> -->
+            <a  class="Newoption">+New</a>
+            <a  class="Createdoption active-option">Created</a>
+            <a class="Publishoption">Published</a>
+            <a class="UnPublisheOption">Unpublished</a>
+        </div>
+    </div>
+</div>
+
+       
+<!-- start here all Panel  -->
+ <div class="pannel-container">
+ <div class="pannel">
+   
+    <!-- this is a created pannel -->
+    
+    <div class="pannel-content  Created-pannel "></div>
+
+
+    <!-- this is a publish pannel -->
+    <div class="pannel-content  Published-pannel close-pannel  "></div>
+
+    <!-- this is a upPublish pannel -->
+    <div class="pannel-content  Unpublished-pannel close-pannel"></div>
+ </div>
+ </div>
+   </main>
+
+
+         <!-- Start Recently post   -->
+
+         <script src="Js files/header.js"></script>
+         <script src="Js files/BlogManage.js"></script>
+</body>
+</html>

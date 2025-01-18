@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css files/header.css">
+    <link rel="stylesheet" href="Css files/createBlogNote.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <div class="logo-img">
+              <img src="images/logo.jpg" alt="" />
+              
+            </div>
+          </div>
+          <div class="nav-menu">
+            <div class="menu">
+                <span class="close-btn"><i class="ri-close-large-line"></i></i></span>
+              <a href="index.html">Home</a>
+              <a href="createBlogNote.html" id="active-page">Create Blog/Note's</a>
+              <!-- <a href="blog.html">Blog</a>
+              <a href="#">Note</a> -->
+              <a href="about.html" >About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <div class="links">
+              <a href="https://github.com/nameisdeipak"><i class="ri-github-fill"></i></a>
+              <a href="https://www.linkedin.com/in/deepak-patidar-720262319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="ri-linkedin-box-fill"></i></a>
+              <a href="https://www.instagram.com/nameisdeipak/?igsh=ZDA4aXI4cmJjYXA4#"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+          <div class="hamburder-btn">
+            <!-- <span><i class="ri-more-2-fill"></i></span> -->
+            <span class="toggel-btn"><i class="ri-menu-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      
+
+      <div class="popupMSG hidePopup">
+        <p id="msg"></p>
+      </div>
+     
+
+        <div class="status-bar">
+
+          <div class="status-container">
+            
+            <div class="status-details">
+           
+              Blog
+            </div>
+            <div class="status-feature">
+              <a  class="blog-option active-option"> blog</a>
+              <a class="note-option"> note</a>
+            </div>
+            
+          </div>
+          <hr>
+        </div>
+
+    
+        <div class="blog-area  ">
+
+            <div class="blog-container">
+                <div class="blog-area-heading">
+                    <h1>Create your blog</h1>
+
+                </div>
+
+                <div class="create-area">
+                  <div class="tools-box">
+                    <p>tools:</p>
+                    <ul class="tools">
+                      <li class="bold" onclick="formateText('b',event)"><i class="ri-bold"></i></li>
+                      <li class="italic" onclick="formateText('i',event)"><i class="ri-italic"></i></li>
+                      <li class="underline" onclick="formateText('u',event)"><i class="ri-underline"></i></li>
+                      <li class="heading" onclick="formateText('h3', event)"><i class="ri-heading"></i></li>
+                      <li class="bullet" onclick="formateText('li',event)"><i class="ri-list-unordered"></i></li>
+                    </ul>
+                  </div>
+
+                
+                  <form class="blog-input-form">
+                    <div class="blog-input">
+                     
+                      <p>Note : Formating is work when you click button and than select text that you want to formate.</p>
+                    </div>
+                    <div class="blog-input">
+                      <label for="editor">Blog:</label>
+                      <div contenteditable="true" id="editor" class="editor"></div>
+                    </div>
+                    <div class="blog-input">
+                      <label for="blog-author">Blog Author:</label>
+                      <input type="text" placeholder="Enter a Blog Author name" id="blog-author" />
+                    </div>
+                    <div class="blog-input">
+                      <label for="blog-title">Blog Title:</label>
+                      <input type="text" placeholder="Enter a Blog Title Heading" id="blog-title" />
+                    </div>
+                  
+                    <div class="blog-input">
+                      <label for="blog-description">Blog Image URL:</label>
+                      <input type="text" placeholder="Enter a blog image source" id="blog-image" />
+                    </div>
+                    <div class="blog-savebtns">
+                      <button type="submit" id="save-blog" class="save-blog-btn">Save</button>
+                      <!-- <button type="reset" id="clear-blog" class="clear-blog-btn">clear All</button> -->
+                    </div>
+                  </form>
+                </div>
+
+             
+      
+
+                <!-- blog save area -->
+                 <div class="blog-save-area">
+                    <div class="blog-save-heading">
+                        <h3>your saves blog</h3>
+                        <a href="BlogManage.html">Manange Blog</a>
+                    </div>
+                    <hr>
+
+                    <div class="saves-blog">
+                        <!-- <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="images/asset 2.webp" alt="">
+                            </div>
+                            <div class="blog-details">
+                                <h2 class="blog-title">web designing part</h2>
+                            <p class="blog-pera">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis deleniti velit animi rem aspernatur alias harum deserunt voluptatum, similique autem. Velit molestiae sapiente vel eaque in unde numquam facilis harum.</p>
+                            </div>
+                            
+                            <div class="blog-creator">
+                                <span class="blog-author-name">Author: Rohan</span>,
+                                <span class="blog-creation-date">Date: 25/23/23</span>
+                            </div>
+                        </div> -->
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+
+
+        <!-- start Note create  -->
+         <div class="note-area show-section">
+            <div class="note-container">
+
+    
+            <div class="note-area-heading">
+                <h2>Create Your Note</h2>
+            </div>
+
+            <div class="note-create-area">
+                <span class="note-heading">write note's</span>
+                <hr style="width: 100%;">
+                <div class="note-write-area">
+                    <div class="note-input">
+                        <label for="noteTitle">Title :</label>
+               
+                        <h4 contenteditable="true"  id="noteTitle"></h4>
+                    </div>
+                    <div class="note-input">
+                        <label for="notePera">Note's  :</label>
+                        <p contenteditable="true"  id="notePera"></p>
+                    </div>
+                </div>
+                <div class="saveButtons">
+                    <button class="save-note-btn">Save</button>
+                    <!-- <button class="clear-note-btn">Clear note's</button> -->
+                </div>
+            </div>
+
+            <!-- this is a save note area -->
+             <div class="save-note-area">
+                <div class="save-note-area-heading">
+                    <h3>save note's</h3>
+                    <a href="NotesManage.html">Manange Note</a>
+                </div>
+                <hr>
+
+                <div class="save-note">
+                <!-- <div class="note-card">
+                    <h3 class="note-title">Deepak</h3>
+                    <p class="note-peragraph">Patidar kd</p>
+                </div> -->
+            </div>
+             </div>
+        </div>
+         </div>
+          
+    </main>
+
+    <script src="Js files/header.js"></script>
+    <script src="Js files/createBlogNote.js"></script>
+  </body>
+</html>
