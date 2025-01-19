@@ -623,7 +623,11 @@ main {
   .blog-savebtns button {
     padding: 1% 12%;
   }
-
+.saveButtons button{
+  padding: 1% 12%;
+  border-radius: 7px;
+  margin-left: 2%;
+}
   .blog-card {
     height: 100%;
   }
