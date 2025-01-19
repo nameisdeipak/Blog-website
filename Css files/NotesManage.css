@@ -176,6 +176,9 @@ color: var(--font-secondary);
 }
 
 .note-peragraph {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
     font-size: 16px;
     font-weight: 400;
     color: var(--font-primary);
@@ -324,6 +327,14 @@ color: var(--font-secondary);
     .pannel-content{
       padding-top: 5% ;
       padding-bottom: 5% ;
+     }
+     .saveButtons button {
+      padding: 1% 12%;
+      border-radius: 7px;
+      margin-left: 2%;
+    }
+     .popupMSG{
+      width: 85%;
      }
   }
   

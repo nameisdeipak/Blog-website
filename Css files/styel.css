@@ -462,4 +462,8 @@ main {
     padding: 2%;
     width: 100%;
   }
+  .blog-creator{
+    height: 15%;
+    flex-wrap: wrap;  
+  } 
 }
