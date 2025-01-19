@@ -270,3 +270,11 @@
 
 
 }
+
+@media (max-width:400px) {
+  .blog-creator{
+    height: 15%;
+    flex-wrap: wrap;  
+  } 
+  
+}
