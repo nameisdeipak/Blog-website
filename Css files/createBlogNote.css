@@ -14,12 +14,10 @@
   font-family: system-ui;
 }
 
-
 /* This is for current active page  */
-#active-page{
+#active-page {
   color: var(--font-secondary);
 }
-
 
 /* Start here to main tag of element  rules  */
 
@@ -27,12 +25,9 @@ main {
   position: relative;
 }
 
-
-.show-section{
+.show-section {
   display: none;
 }
-
-
 
 /* start her to .status-bar */
 .status-bar {
@@ -44,7 +39,6 @@ main {
   align-items: center;
   flex-direction: column;
 }
-
 
 .status-bar hr {
   width: 95%;
@@ -79,8 +73,6 @@ main {
   letter-spacing: -1.6px;
 }
 
-
-
 .status-feature {
   width: auto;
   height: 100%;
@@ -96,15 +88,14 @@ main {
   color: var(--font-secondary);
   text-transform: capitalize;
   font-size: 16px;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 4px;
 }
 
-.status-feature .active-option{
+.status-feature .active-option {
   background: var(--border-color);
   color: var(--font-secondary);
   text-decoration: none;
-
 }
 
 /* blog create area */
@@ -191,7 +182,7 @@ main {
   border-radius: 9px;
 }
 
-.active-formate{
+.active-formate {
   background: var(--font-secondary);
   color: var(--secondary-bg);
 }
@@ -268,7 +259,7 @@ main {
   text-align: center;
   box-shadow: 0px 0px 20px 2px gainsboro;
   border-radius: 10px;
-  padding: 3% 5%;;
+  padding: 3% 5%;
 }
 
 .hidePopup {
@@ -375,10 +366,10 @@ main {
   font-size: 14px;
   color: #737373;
   width: 100%;
-  display: -webkit-box;          /* Use flexbox-based layout for content */
-  -webkit-line-clamp: 2;         /* Limit to 2 lines */
-  -webkit-box-orient: vertical;  /* Set vertical orientation */
-  overflow: hidden;              /* Hide overflowing content */
+  display: -webkit-box; /* Use flexbox-based layout for content */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Set vertical orientation */
+  overflow: hidden; /* Hide overflowing content */
   text-overflow: ellipsis;
 }
 
@@ -585,8 +576,6 @@ main {
   .banner-content .banner-content-1 {
     width: 100%;
   }
-
-
 }
 
 @media (max-width: 800px) {
@@ -626,17 +615,19 @@ main {
   .blog-savebtns button {
     padding: 1% 12%;
   }
-.saveButtons button{
-  padding: 1% 12%;
-  border-radius: 7px;
-  margin-left: 2%;
-}
+  .saveButtons button {
+    padding: 1% 12%;
+    border-radius: 7px;
+    margin-left: 2%;
+  }
   .blog-card {
     height: 100%;
   }
 
-
-  .popupMSG{top: 50%;}
+  .popupMSG {
+    top: 50%;
+    width: 85%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -649,9 +640,8 @@ main {
     border-radius: 7px;
   }
 
-.blog-creator{
+  .blog-creator {
     height: 15%;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
   }
-
 }
