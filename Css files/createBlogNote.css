@@ -642,5 +642,9 @@ main {
     border-radius: 7px;
   }
 
+.blog-creator{
+    height: 15%;
+    flex-wrap: wrap;  
+  }
 
 }
