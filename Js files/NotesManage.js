@@ -137,7 +137,7 @@ function showNote() {
       // note peragraph
       const note_pera = document.createElement("p");
       note_pera.classList.add("note-peragraph");
-      note_pera.textContent =`Title : ${ note.Peragraph}` ;
+      note_pera.textContent =`content : ${ note.Peragraph}` ;
 
       noteCard.appendChild(note_number);
       noteCard.appendChild(note_title);
